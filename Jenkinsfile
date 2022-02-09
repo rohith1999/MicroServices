@@ -13,7 +13,7 @@ pipeline {
         }
         stage('product-service'){
             steps{
-                dir("/product-service/product-service"){
+                dir("product-service/product-service"){
                 sh script:'mvn clean package'
                 }
             }
