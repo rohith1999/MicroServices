@@ -7,7 +7,7 @@ pipeline {
         stage('order-service'){
             steps{
                 dir("order-service/order-service"){
-                bat script:'mvn clean package -X'
+                bat script:'mvn clean package -DskipTests'
                 }
             }
         }
