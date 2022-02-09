@@ -18,13 +18,7 @@ pipeline {
                 }
             }
         }
-        stage('discovery-server'){
-            steps{
-                dir("discovery-server/discovery-server"){
-                bat script:'mvn clean package -DskipTests'
-                }
-            }
-        }
+       
          stage('api-gateway-service'){
             steps{
                 dir("api-gateway-service/api-gateway-service"){
