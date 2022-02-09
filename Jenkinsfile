@@ -6,7 +6,7 @@ pipeline {
     stages{
         stage('order-service'){
             steps{
-                dir("/order-service/order-service"){
+                dir("order-service/order-service"){
                 sh script:'mvn clean package'
                 }
             }
